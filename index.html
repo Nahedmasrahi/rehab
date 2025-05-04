@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>REHAB</title>
+  <link rel="icon" type="image/png" href="rehab.png.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <style>
+    html{
+        scroll-behavior: smooth;
+    }
+    body {
+      background-color: #fdfcf9;
+      color: #333;
+      font-family: 'Cairo', sans-serif;
+    }
+      
+
+.nav {
+  width: 500%;
+  height: 700%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f5f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.logo {
+  font-size: 24px; 
+  font-weight: bold;
+  color: #5a4d2f;
+  font-family: sans-serif;
+  order: 2;
+}
+
+
+.links {
+  display: flex;
+  gap: 15px;
+  order: 1;
+  direction: ltr;
+}
+
+.links a {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px; 
+  font-family: sans-serif;
+  text-transform: capitalize;
+  color: #5a4d2f;
+  transition: 0.3s;
+  padding: 5px 8px;
+}
+
+
+.links a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background-color: #c8a96b;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  color: #c8a96b;
+}
+
+.links a:hover::before {
+  width: 100%;
+}
+
+.glow-img {
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.glow-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #716c6c;
+}
+
+
+
+
+
+
+
+
+
+    .card {
+      border: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .scroll-row {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 14px;
+      background: #4f3803;
+    }
+    .scroll-row img {
+      height: 100px;
+      margin-left: 9px;
+      border-radius: 5px;
+    }
+
+    .text-center{
+      width: auto;
+      height: fit-content;
+      font-size: 30px;
+      color: #fdfcf9;
+        }
+    .text-center h3{
+        background: fixed;
+        color: #fdfcf9;
+    }
+    
+
+    .scroll-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+ }
+
+ .scroll-track {
+  display: flex;
+  width: calc(30px * 10); 
+  animation: scroll 25s linear infinite;
+ }
+
+
+ .back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  background-color: #4d3c09ed; 
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  border-radius: 20%;
+  text-decoration: none;
+  font-size: 23px;
+  box-shadow: 0 0 10px rgba(59, 46, 1, 0.866);
+  transition: transform 0.5s, background-color 0.5s;
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  transform: scale(1.2);
+  background-color: #925f2b;
+}
+
+ 
+
+ @keyframes scroll {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+ }
+
+
+ .btn btn-primary{
+    color: #c8a96b;
+    transition: all;
+    transform: none;
+ }
+
+ .form-control:focus {
+  border-color: #5C4033; 
+  box-shadow: 0 0 0 0.2rem rgba(92, 64, 51, 0.25);
+}
+
+
+
+    footer {
+      background-color: #fff6e9;
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+      color: #5a4d2f;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Navbar -->
+<nav class="nav">
+    <div class="logo">REHAB</div>
+    <div class="links">
+      <a href="#about">Home</a>
+      <a href="#about">About</a>
+      <a href="#">Work</a>
+      <a href="#project">Projects</a>
+      <a href="#Feadback">Feedback</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  
+
+<!-- نبذة عني -->
+<section class="container py-5" id="about">
+    <h2 class="text-center mb-5" style="color: #5C4033;">About Me</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="drrehab.png.jpeg" alt="Dr. Rehab" class="img-fluid rounded-circle glow-img w-75">
+      </div>
+      <div class="col-md-6" style="color: #5C4033; text-align: right;">
+        <p class="lead">
+          I’m <strong style="color: #c8a96b;">Dr.Rehab</strong>, a Saudi physician holding the Saudi Board in Obstetrics and Gynecology. 
+          I am deeply passionate about enhancing the quality of healthcare services and ensuring the safety of mothers.
+        </p>
+        <p class="lead">
+          Throughout my journey, I’ve led several impactful initiatives across the region and was honored by the Minister of Health 
+          for applying best practices in safe childbirth.
+        </p>
+        <p class="lead">
+          My aspiration is to continue my academic and professional path in the field of infertility and IVF through a certified 
+          international fellowship, allowing me to provide advanced and holistic care for women and children.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  
+<!-- أعمالي -->
+<section class="container py-5" id="project">
+  <h2 class="text-center mb-4">My Work</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="عمل 1">
+        <div class="card-body">
+          <h5 class="card-title">project 1</h5>
+          <p class="card-text">hjcbhscbscb hj,sbc ,jbhdbchgdbcbhjebcfwyhvbecy</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="عمل 2">
+        <div class="card-body">
+          <h5 class="card-title">project 2</h5>
+          <p class="card-text">jidcbvudsbcubewuichlEIHFUCRBFKHERFYBDWHbdkwjsnjdnw   ubfuiewbchubule</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="عمل 3">
+        <div class="card-body">
+          <h5 class="card-title">project 3</h5>
+          <p class="card-text">hdchydsbchbsdkcbkakJxnjlBEFUBERNksjdnjerugbewikndewjbfulewbuflbejwkfb.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- تعليقات -->
+<section class="scroll-row background-color"  id="Feadback">
+    <section class="scroll-row background-color py-4">
+        <h3 class="text-center mb-4">Your Feedback</h3>
+        <div class="scroll-container overflow-hidden">
+          <div class="scroll-track d-flex">
+            <img src="C1.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C2.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C3.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C4.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C1.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C2.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C3.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C4.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C1.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C2.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C3.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C4.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C1.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C2.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C3.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C4.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C1.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C2.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C3.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C4.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C1.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C2.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C3.png.jpeg" class="partner-img mx-4" alt="">
+            <img src="C4.png.jpeg" class="partner-img mx-4" alt="">
+          </div>
+        </div>
+      </section>
+</section>
+
+
+<!-- تواصل معي -->
+<section class="container py-5" id="contact">
+    <h2 class="text-center mb-4" style="color: #5C4033;" >!Contact Me</h2>
+    <div class="mx-auto" style="max-width: 500px; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Your Message</label>
+          <textarea class="form-control" id="message" rows="4" style="resize: none;"></textarea>
+        </div>
+        <button type="submit" class="btn w-100 mb-3" style="background-color: #5C4033; color: white; transition: 0.3s;" onmouseover="this.style.backgroundColor='#4B3621'" onmouseout="this.style.backgroundColor='#5C4033'">Send</button>
+
+      </form>
+    </div>
+  </section>
+  
+
+<!-- الفوتر -->
+<footer>
+    2025 Dr. Rehab | Designed and Developed byNahed ©
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<a href="#top" class="back-to-top">
+    ↑
+  </a>  
+</body>
+</html>
