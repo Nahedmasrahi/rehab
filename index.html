@@ -37,28 +37,31 @@
 
 
 
-@media (max-width: 600px) {
-  .links {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 أعمدة */
-    gap: 10px;
-    order: 1;
-    width: 100%;
-    justify-items: center;
-    margin-top: 10px;
-  }
+.logo {
+  font-size: 22px; 
+  font-weight: bold;
+  color: #5a4d2f;
+  font-family: sans-serif;
+  order: 2;
+}
 
-  .logo {
-    order: 2;
-    text-align: center;
-    width: 100%;
-    margin-top: 10px;
-  }
 
-  .links a {
-    font-size: 16px;
-    padding: 6px 8px;
-  }
+.links {
+  display: flex;
+  gap: 9px;
+  order: 1;
+  direction: ltr;
+}
+
+.links a {
+  position: relative;
+  text-decoration: none;
+  font-size: 17px; 
+  font-family: sans-serif;
+  text-transform: capitalize;
+  color: #5a4d2f;
+  transition: 0.3s;
+  padding: 4px 7px;
 }
 
 
