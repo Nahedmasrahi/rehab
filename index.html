@@ -47,11 +47,18 @@
 
 
 .links {
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
+  display:flex;
   gap: 9px;
   order: 1;
   direction: ltr;
+}
+@media (max-width: 768px) {
+  .links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+  }
 }
 
 .links a {
